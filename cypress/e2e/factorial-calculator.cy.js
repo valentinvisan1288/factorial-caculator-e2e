@@ -1,4 +1,4 @@
-describe("Testing actorial calculator", () => {
+describe("Testing factorial calculator", () => {
   before(() => {
     cy.visit("https://qainterview.pythonanywhere.com/");
   });
