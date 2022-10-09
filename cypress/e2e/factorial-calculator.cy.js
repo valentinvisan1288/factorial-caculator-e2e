@@ -24,7 +24,7 @@ describe("Testing factorial calculator", () => {
     cy.get('button#getFactorial[type="submit"]').click();
     cy.get("p#resultDiv", { timeout: 2000 })
       .should("be.visible")
-      .should("contain", "The factorial of 100 is: 9.332621544394415e+157"); // aproximate value https://coolconversion.com/math/factorial/_100_
+      .should("contain", "The factorial of 100 is: 9.332621544394415e+157");
   });
   it("Verifies factorial with random number between 10 and 100", () => {
     const randomNumber = function interval(min, max) {
